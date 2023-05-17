@@ -22,7 +22,7 @@ for x1 in range(10):
         for x3 in range(10):
             for x4 in range(10):
                 cmdId = number_str[x1] + number_str[x2] + number_str[x3] + number_str[x4]   # Convert to bytes
-                print("\n", cmdId)
+                print(cmdId)
                 connect_to_c2_agent(cmdId, b"some_data")
 
                 # Sleep to add delay between connections (adjust as needed)
