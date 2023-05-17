@@ -10,6 +10,8 @@ def connect_to_c2_agent(cmdId, data):
     content = header + cmd + data
     io.send(content)
     time.sleep(0.000001)
+    output = recvrepeat(timeout=0.00001)
+    print(output)
     io.close()
 
 
