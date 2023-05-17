@@ -16,6 +16,8 @@ number_str = "0123456789"
 
 # Iterate over each combination
 for x1 in range(10):
+    print("x1 = ", x1)
+    
     for x2 in range(10):
         for x3 in range(10):
             for x4 in range(10):
