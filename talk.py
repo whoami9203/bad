@@ -3,7 +3,6 @@ import time
 
 
 def connect_to_c2_agent(cmdId, data):
-    print("Trying cmdId:", cmdId.decode())
     io = remote("127.0.0.1", 7373)
     header = b"nslab_w31c0m3_U\x00"
     cmd = cmdId + b"\x00" * (4 - len(cmdId))
